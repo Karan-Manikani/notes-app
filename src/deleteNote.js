@@ -1,5 +1,5 @@
 function deleteNote(id, notesArray) {
-	const newNotes = notesArray.filer((note) => note.id !== id);
+	const newNotes = notesArray.filter((note) => note.id !== id);
 	return newNotes;
 }
 

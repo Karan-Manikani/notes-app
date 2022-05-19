@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import AddNote from "./components/AddNote";
 import Editor from "./components/Editor";
+import Note from "./components/Note";
+
+import "./css/app.css";
 
 function App() {
 	const storedNotes = JSON.parse(localStorage.getItem("notes")) || [];
@@ -18,7 +21,16 @@ function App() {
 			<Header />
 			<AddNote setEnableEditor={setEnableEditor} />
 			{enableEditor && <Editor notes={notes} setNotes={setNotes} />}
-			<h1>Note</h1>
+			<div className="notes">
+				<Note />
+				<Note />
+				<Note />
+				<Note />
+				<Note />
+				<Note />
+				<Note />
+				<Note />
+			</div>
 		</div>
 	);
 }

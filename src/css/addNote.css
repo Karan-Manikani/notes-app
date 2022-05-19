@@ -13,7 +13,7 @@
 }
 
 .create-new-note:hover {
-    background-color: rgb(153, 235, 158);
+    background-color: lightgray ;
     transition: all 0.5s;
 }
 

@@ -1,0 +1,16 @@
+.notes {
+    overflow-y: scroll;
+    height: calc(100vh - 136px);
+} 
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: #E8E8E8;
+    position: relative;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}

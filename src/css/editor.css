@@ -1,0 +1,101 @@
+.editor {
+	float: right;	
+	width: 30%;
+}
+
+.editor > h2 {
+	font-family: "Roboto Flex", sans-serif;
+	margin: 0;
+	margin-top: 1rem; 
+	text-align: center;
+	font-size: 1.9rem;
+}
+
+.vertical-line {
+	border-left: 6px solid #E8E8E8;
+    height: calc(100vh - 136px);
+    position:absolute;
+    left: 70%;
+}
+
+.title-input {
+    width: 80%;
+    margin: 1rem 0rem 2rem 3rem;
+    height: 2.5rem;
+    border-radius: 10px;
+	font-family: "Roboto Flex", sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	padding: 0rem 0rem 0rem 0.7rem;
+	background-color:#E8E8E8;
+	border: none;
+	letter-spacing: 1px;
+}
+
+.body-input {
+    display: block;
+    height: 50vh;
+    width: 80%;
+    max-width: 100%;
+    margin: 0rem 3rem;
+    border-radius: 10px;
+	font-family: "Roboto Flex", sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+	padding: 0.7rem;
+	background-color:#E8E8E8;
+	border: none;
+	letter-spacing: 1px;
+    resize: none;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 2rem 3rem;
+}
+
+.buttons > button{
+	width: 45%;
+	height: 2.5rem;
+	border-radius: 10px;
+	border: none;
+	background-color: #E8E8E8;
+	font-size: 1.2rem;
+	font-family: "Roboto Flex", sans-serif;
+	font-weight: 300;
+	transition: all 0.5s;
+	cursor: pointer;
+
+}
+
+.save-button:hover {
+	background-color: rgb(153, 235, 158);
+}
+
+.reset-button:hover {
+	background-color: rgb(241, 159, 159);
+}
+
+.save-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.save-button > img{
+	width: 1.2rem;
+	margin-left: 0.5rem;
+}
+
+.reset-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.reset-button > img {
+	width: 1.2rem;
+	margin-left: 0.5rem;
+}

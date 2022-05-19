@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+
+import Header from "./components/Header";
+import AddNote from "./components/AddNote";
+import Editor from "./components/Editor";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const storedNotes = JSON.parse(localStorage.getItem("notes")) || [];
+	const [notes, setNotes] = useState([]); // <---- CHANGE THIS IN THE FUTURE!!!!!
+	const [enableEditor, setEnableEditor] = useState(false);
+
+	useEffect(() => {
+		localStorage.setItem("notes", JSON.stringify(notes));
+	}, [notes]);
+
+	return (
+		<div className="App">
+			<Header />
+			<AddNote setEnableEditor={setEnableEditor} />
+			{enableEditor && <Editor notes={notes} setNotes={setNotes} />}
+			<h1>Note</h1>
+		</div>
+	);
 }
 
 export default App;

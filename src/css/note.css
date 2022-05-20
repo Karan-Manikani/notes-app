@@ -13,6 +13,10 @@
     transform: scale(1.05);
 }
 
+.highlight {
+    background-color: lightcyan;
+}
+
 .content {
     display: flex;
     flex-direction: column;

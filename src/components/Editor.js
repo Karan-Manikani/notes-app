@@ -1,7 +1,7 @@
 import "../css/editor.css";
 import resetIcon from "../images/refresh-outline.svg";
 import saveIcon from "../images/save-outline.svg";
-import createNewNote from "../createNewNote";
+import createNewNote from "../js/createNewNote";
 import { useState } from "react";
 
 function Editor(props) {

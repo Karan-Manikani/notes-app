@@ -61,7 +61,7 @@
 
 .delete-icon {
     float: right;
-    margin: 0rem 2rem 0rem 0rem;
+    margin: 0rem 2rem 0.2rem 0rem;
     width: 3rem;
     padding: 0.6rem;
     cursor: pointer;

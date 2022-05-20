@@ -12,7 +12,7 @@
     cursor: pointer;
     background: linear-gradient(to left, #E8E8E8 50%, lightgray 50%) right;
     background-size: 200%;
-    transition: 1s ease-out;
+    transition: 0.5s ease-out;
 }
 
 .create-new-note:hover {

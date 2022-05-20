@@ -14,6 +14,6 @@ This project is an attempt to make a Notes App using React.
 - [x] Users can delete notes
 - [x] Users can search for notes using the search bar
 - [x] All notes are stored in the browser's local storage, so users need not worry about losing their notes upon closing the browser.
-- [ ] Users can edit notes
-- [ ] Users can switch between light and dark mode
+- [ ] Users can edit notes (Work in progress)
+- [ ] Users can switch between light and dark mode (Work in progress)
   

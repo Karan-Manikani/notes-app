@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/%7Brepo-name%7D/static/css/main.fedaf924.css",
-    "main.js": "/%7Brepo-name%7D/static/js/main.4b768ade.js",
-    "static/media/light-mode-icon.svg": "/%7Brepo-name%7D/static/media/light-mode-icon.0d554204c36e03832dfc0ea9f68ec5d4.svg",
-    "index.html": "/%7Brepo-name%7D/index.html",
-    "static/media/trash-outline.svg": "/%7Brepo-name%7D/static/media/trash-outline.90a4794c525ecbd28709dfda3ba37c15.svg",
-    "static/media/create-outline.svg": "/%7Brepo-name%7D/static/media/create-outline.4687f6fb689356dc752e1689d7dfe04c.svg",
-    "static/media/save-outline.svg": "/%7Brepo-name%7D/static/media/save-outline.827af1cbc6dfb42058d8816340299cd3.svg",
-    "static/media/document-text-outline.svg": "/%7Brepo-name%7D/static/media/document-text-outline.2627d3185c40d6b1bd8d2197d5d2e903.svg",
-    "static/media/close-circle-outline.svg": "/%7Brepo-name%7D/static/media/close-circle-outline.7704b6d58c7dafb1493e1209ed8706e9.svg",
-    "static/media/refresh-outline.svg": "/%7Brepo-name%7D/static/media/refresh-outline.7a70fc720e1222d6322800bc940ddf3f.svg",
-    "main.fedaf924.css.map": "/%7Brepo-name%7D/static/css/main.fedaf924.css.map",
-    "main.4b768ade.js.map": "/%7Brepo-name%7D/static/js/main.4b768ade.js.map"
+    "main.css": "/notes-app/static/css/main.fedaf924.css",
+    "main.js": "/notes-app/static/js/main.041fdd3b.js",
+    "static/media/light-mode-icon.svg": "/notes-app/static/media/light-mode-icon.0d554204c36e03832dfc0ea9f68ec5d4.svg",
+    "index.html": "/notes-app/index.html",
+    "static/media/trash-outline.svg": "/notes-app/static/media/trash-outline.90a4794c525ecbd28709dfda3ba37c15.svg",
+    "static/media/create-outline.svg": "/notes-app/static/media/create-outline.4687f6fb689356dc752e1689d7dfe04c.svg",
+    "static/media/save-outline.svg": "/notes-app/static/media/save-outline.827af1cbc6dfb42058d8816340299cd3.svg",
+    "static/media/document-text-outline.svg": "/notes-app/static/media/document-text-outline.2627d3185c40d6b1bd8d2197d5d2e903.svg",
+    "static/media/close-circle-outline.svg": "/notes-app/static/media/close-circle-outline.7704b6d58c7dafb1493e1209ed8706e9.svg",
+    "static/media/refresh-outline.svg": "/notes-app/static/media/refresh-outline.7a70fc720e1222d6322800bc940ddf3f.svg",
+    "main.fedaf924.css.map": "/notes-app/static/css/main.fedaf924.css.map",
+    "main.041fdd3b.js.map": "/notes-app/static/js/main.041fdd3b.js.map"
   },
   "entrypoints": [
     "static/css/main.fedaf924.css",
-    "static/js/main.4b768ade.js"
+    "static/js/main.041fdd3b.js"
   ]
 }

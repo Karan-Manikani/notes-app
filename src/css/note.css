@@ -36,10 +36,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 15;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     font-family: 'Poppins', sans-serif;
-    line-height: 18px;
+    line-height: 19px;
     white-space: pre-wrap;
     word-wrap: break-word;
 }

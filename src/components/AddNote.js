@@ -1,9 +1,12 @@
-import createNoteIcon from "../images/create-outline.svg";
+import createNoteIcon from "../images/document-text-outline.svg";
 import "../css/addNote.css";
 
 function AddNote(props) {
 	function handleClick() {
-		props.setEnableEditor((prevEnableEditor) => !prevEnableEditor);
+		props.setEnableEditor(true);
+		props.setEditMode(false);
+		props.setViewMode(false);
+		props.setCreateMode(true);
 	}
 
 	return (

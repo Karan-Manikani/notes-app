@@ -13,6 +13,15 @@ function App() {
 	const [enableEditor, setEnableEditor] = useState(false);
 	const [search, setSearch] = useState("");
 	const [filteredNotes, setFilteredNotes] = useState([]);
+	const [editMode, setEditMode] = useState(false);
+	const [viewMode, setViewMode] = useState(false);
+	const [createMode, setCreateMode] = useState(false);
+	const [note, setNote] = useState({
+		id: "",
+		title: "",
+		body: "",
+		lastModified: "",
+	});
 
 	useEffect(() => {
 		localStorage.setItem("notes", JSON.stringify(notes));
@@ -29,6 +38,12 @@ function App() {
 			setNotes={setNotes}
 			notes={notes}
 			filteredNotes={filteredNotes}
+			note={note}
+			setNote={setNote}
+			setEnableEditor={setEnableEditor}
+			setEditMode={setEditMode}
+			setViewMode={setViewMode}
+			setCreateMode={setCreateMode}
 		/>
 	));
 
@@ -41,8 +56,27 @@ function App() {
 				filteredNotes={filteredNotes}
 				setFilteredNotes={setFilteredNotes}
 			/>
-			<AddNote setEnableEditor={setEnableEditor} />
-			{enableEditor && <Editor notes={notes} setNotes={setNotes} />}
+			<AddNote
+				setEnableEditor={setEnableEditor}
+				setEditMode={setEditMode}
+				setViewMode={setViewMode}
+				setCreateMode={setCreateMode}
+			/>
+			{enableEditor && (
+				<Editor
+					notes={notes}
+					setNotes={setNotes}
+					note={note}
+					setNote={setNote}
+					setEnableEditor={setEnableEditor}
+					editMode={editMode}
+					setEditMode={setEditMode}
+					viewMode={viewMode}
+					setViewMode={setViewMode}
+					createMode={createMode}
+					setCreateMode={setCreateMode}
+				/>
+			)}
 			<div className="notes">{noteList}</div>
 		</div>
 	);

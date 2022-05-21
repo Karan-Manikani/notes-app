@@ -1,18 +1,13 @@
 import "../css/editor.css";
 import resetIcon from "../images/refresh-outline.svg";
 import saveIcon from "../images/save-outline.svg";
+import closeIcon from "../images/close-circle-outline.svg";
 import createNewNote from "../js/createNewNote";
-import { useState } from "react";
 
 function Editor(props) {
-	const [note, setNote] = useState({
-		title: "",
-		body: "",
-	});
-
 	function handleChange(event) {
 		const { name, value } = event.target;
-		setNote((prevNote) => {
+		props.setNote((prevNote) => {
 			return {
 				...prevNote,
 				[name]: value,
@@ -21,21 +16,57 @@ function Editor(props) {
 	}
 
 	function handleSave() {
-		const newNote = createNewNote(note.title, note.body);
+		if (props.editMode) {
+			const updatedNotes = props.notes.map((updatedNote) => {
+				if (updatedNote.id === props.note.id) {
+					return {
+						...props.note,
+						lastModified: document.lastModified.split(" ")[0],
+					};
+				}
+				return updatedNote;
+			});
+			props.setNotes(updatedNotes);
+			props.setEditMode(false);
+			props.setViewMode(true);
+			return;
+		}
+		const newNote = createNewNote(props.note.title, props.note.body);
 		props.setNotes((prevNotes) => [...prevNotes, newNote]);
+		props.setCreateMode(true);
+		handleReset();
 	}
 
 	function handleReset() {
-		setNote({
+		props.setNote({
+			id: "",
 			title: "",
 			body: "",
+			lastModified: "",
 		});
+	}
+
+	function displayHeading() {
+		if (props.viewMode) {
+			return <h2 className="editor-heading">Viewing Mode</h2>;
+		} else if (props.editMode) {
+			return <h2 className="editor-heading">Editing Mode</h2>;
+		} else if (props.createMode) {
+			return <h2 className="editor-heading">New Note</h2>;
+		}
+	}
+
+	function closeEditor() {
+		props.setEnableEditor(false);
 	}
 
 	return (
 		<div className="editor">
 			<div className="vertical-line"></div>
-			<h2>New Note</h2>
+			<div className="editor-top">
+				{displayHeading()}
+				<img src={closeIcon} alt="close editor" onClick={closeEditor} />
+			</div>
 			<form id="note-entry">
 				<input
 					type="text"
@@ -43,7 +74,7 @@ function Editor(props) {
 					className="title-input"
 					onChange={handleChange}
 					name="title"
-					value={note.title}
+					value={props.note.title}
 				></input>
 				<textarea
 					className="body-input"
@@ -51,17 +82,21 @@ function Editor(props) {
 					placeholder="Type something..."
 					onChange={handleChange}
 					name="body"
-					value={note.body}
+					value={props.note.body}
 				></textarea>
 				<div className="buttons">
-					<button type="button" className="save-button" onClick={handleSave}>
-						Save
-						<img src={saveIcon} alt="save" />
-					</button>
-					<button type="button" className="reset-button" onClick={handleReset}>
-						Reset
-						<img src={resetIcon} alt="reset" />
-					</button>
+					{!props.viewMode && (
+						<button type="button" className="save-button" onClick={handleSave}>
+							Save
+							<img src={saveIcon} alt="save" />
+						</button>
+					)}
+					{!props.viewMode && (
+						<button type="button" className="reset-button" onClick={handleReset}>
+							Reset
+							<img src={resetIcon} alt="reset" />
+						</button>
+					)}
 				</div>
 			</form>
 		</div>

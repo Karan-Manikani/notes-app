@@ -20,6 +20,7 @@
 .content {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .title {
@@ -59,16 +60,32 @@
     margin: 0rem 0rem 0rem 2rem;
 }
 
+.edit-delete-images {
+    display: flex;
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+}
+
 .delete-icon {
-    float: right;
-    margin: 0rem 2rem 0.2rem 0rem;
-    width: 3rem;
-    padding: 0.6rem;
+    width: 2.5rem;
+    padding: 0.4rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out; 
 }
 
 .delete-icon:hover {
+    background-color: lightgray;
+    border-radius: 10rem;
+}
+
+.edit-icon {
+    width: 2.6rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+
+.edit-icon:hover {
     background-color: lightgray;
     border-radius: 10rem;
 }

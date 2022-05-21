@@ -3,12 +3,23 @@
 	width: 25%;
 }
 
-.editor > h2 {
+.editor-heading {
 	font-family: "Roboto Flex", sans-serif;
 	margin: 0;
-	margin-top: 1rem; 
 	text-align: center;
 	font-size: 1.9rem;
+}
+
+.editor-top {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.editor-top > img {
+	width: 3rem;
+	cursor: pointer;
 }
 
 .vertical-line {
@@ -54,6 +65,7 @@
 	justify-content: space-between;
 	width: 80%;
 	margin: 2rem 3rem;
+	margin-bottom: 1rem;
 }
 
 .buttons > button{

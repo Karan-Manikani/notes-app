@@ -2,6 +2,10 @@
 
 This project is an attempt to make a Notes App using React.
 
+## Deployment
+
+https://karan-manikani.github.io/notes-app/
+
 ## Technologies Used
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" height=30px align="left" alt="React.js">

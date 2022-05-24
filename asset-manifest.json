@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/notes-app/static/css/main.fedaf924.css",
-    "main.js": "/notes-app/static/js/main.041fdd3b.js",
+    "main.js": "/notes-app/static/js/main.fc395fc2.js",
     "static/media/light-mode-icon.svg": "/notes-app/static/media/light-mode-icon.0d554204c36e03832dfc0ea9f68ec5d4.svg",
     "index.html": "/notes-app/index.html",
     "static/media/trash-outline.svg": "/notes-app/static/media/trash-outline.90a4794c525ecbd28709dfda3ba37c15.svg",
@@ -11,10 +11,10 @@
     "static/media/close-circle-outline.svg": "/notes-app/static/media/close-circle-outline.7704b6d58c7dafb1493e1209ed8706e9.svg",
     "static/media/refresh-outline.svg": "/notes-app/static/media/refresh-outline.7a70fc720e1222d6322800bc940ddf3f.svg",
     "main.fedaf924.css.map": "/notes-app/static/css/main.fedaf924.css.map",
-    "main.041fdd3b.js.map": "/notes-app/static/js/main.041fdd3b.js.map"
+    "main.fc395fc2.js.map": "/notes-app/static/js/main.fc395fc2.js.map"
   },
   "entrypoints": [
     "static/css/main.fedaf924.css",
-    "static/js/main.041fdd3b.js"
+    "static/js/main.fc395fc2.js"
   ]
 }

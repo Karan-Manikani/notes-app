@@ -21,7 +21,7 @@ function Editor(props) {
 				if (updatedNote.id === props.note.id) {
 					return {
 						...props.note,
-						lastModified: document.lastModified.split(" ")[0],
+						lastModified: new Date().toLocaleDateString(),
 					};
 				}
 				return updatedNote;

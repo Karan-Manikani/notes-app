@@ -5,7 +5,7 @@ function createNewNote(title, body) {
 		id: nanoid(),
 		title: title,
 		body: body,
-		lastModified: document.lastModified.split(" ")[0],
+		lastModified: new Date().toLocaleDateString(),
 	};
 }
 
